@@ -1,15 +1,7 @@
 <div class="container mt-4">
-    <!-- Search Row (Optional) -->
+    
     <div class="row mb-4 align-items-center">
-        <div class="myform col-md-2">
-            <label for="productName" class="name form-label mb-0">Product Name</label>
-        </div>
-        <div class="col-md-6">
-            <input type="text" id="productName" class="form-control" placeholder="Enter product name" #txtSearchName>
-        </div>
-        <div class="col-md-2">
-            <input type="button" value="Search" class="btn btn-primary">
-        </div>
+
         <div class="col-md-2">
             <input type="button" value="Filter" class="btn btn-primary" (click)="onFilter()">
         </div>
@@ -30,12 +22,12 @@
                     <th>Order Status</th>
                     <th>Shipping Address</th>
                     <th>Payment Method</th>
-                <th (click)="onPriceOrder()"  style="cursor: pointer;">
-                    <div class="d-flex align-items-center gap-2">
-                        <span>Total Price</span>
-                        <img src="../../assets/arrow.svg" style="width: 10px; height: auto;" alt="sort arrow">
-                    </div>
-                </th>
+                    <th (click)="onPriceOrder()" style="cursor: pointer;">
+                        <div class="d-flex align-items-center gap-2">
+                            <span>Total Price</span>
+                            <img src="../../assets/arrow.svg" style="width: 10px; height: auto;" alt="sort arrow">
+                        </div>
+                    </th>
                     <th>Action</th> <!-- Added Action column -->
                 </tr>
             </thead>
